@@ -405,7 +405,7 @@ def parse_args(args=None):
                         help="the seed used in the training")
     parser.add_argument("--dataset", type=str, default="ogbn-mag")
     parser.add_argument("--gpu", type=int, default=0)
-    parser.add_argument("--cpu", action='store_true', default=False)
+    parser.add_argument("--cpu", action='store_true', default=True)
     parser.add_argument("--root", type=str, default='../data/')
     parser.add_argument("--stages", nargs='+',type=int, default=[300, 300],
                         help="The epoch setting for each stage.")
